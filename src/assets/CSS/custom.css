@@ -1,0 +1,575 @@
+
+.required {
+  color: #ff0000;
+}
+
+.main-heading-style {
+  color: #000000;
+}
+
+/* form css */
+
+.form-container-widget {
+  background-color: white;
+  border: 1px solid whitesmoke;
+  padding: 2%;
+  margin-left: 5%;
+  margin-top: 1%;
+  width: 90%;
+  height: 100%;
+}
+
+.form-btn-cancel {
+  width: 18%;
+  margin-right: 3%;
+}
+
+.form-btn-save {
+  width: 15%;
+}
+
+.heading-style {
+  margin-top: -1%;
+  padding-left: 1%;
+  padding-bottom: 2%;
+  color: #000000;
+}
+
+.tab-menu-widget {
+  margin-top: 3%;
+  margin-bottom: -2%;
+}
+
+.tab-menu-border {
+  border: 1px solid rgba(128, 128, 128, 0.24) !important;
+  border-bottom: white !important;
+}
+
+.form-top-margin {
+  margin-top: 0%;
+  margin-bottom: -1%;
+}
+
+.form-bottom-margin {
+  margin-bottom: 5%;
+}
+
+.form-btn-prev {
+  margin-left: 3%;
+  width: 18% !important;
+}
+
+.label-margin {
+  margin-left: -7%;
+}
+
+.filter-margin {
+  margin-left: 3%;
+}
+
+.retailer-btn-add {
+  margin-top: 2%;
+}
+
+.left-margin-add-btn {
+  margin-left: 5%;
+}
+
+.currancy-label {
+  font-size: 8px;
+  font-weight: 500;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: white;
+}
+
+@media only screen and (max-width: 1279px) and (min-width: 1024px) {
+  .form-container-widget {
+    margin-left: 7%;
+    width: 87%;
+  }
+}
+
+@media only screen and (max-width: 1919px) and (min-width: 1600px) {
+  .form-container-widget {
+    margin-left: 4%;
+    width: 92%;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .form-container-widget {
+    margin-left: 4%;
+    width: 92%;
+  }
+}
+
+.grid-container-widget {
+  margin-left: 5%;
+  margin-top: 0%;
+  width: 90%;
+  /* height: 100%; */
+}
+
+.back-btn-margins {
+  padding: 0% !important;
+  margin-top: 2%;
+  margin-left: -1% !important;
+}
+
+.tab-menu-margins {
+  padding: 0% !important;
+  /*margin-top: 2%;*/
+  margin-bottom: -2%;
+}
+
+.form-container-margins {
+  background-color: white;
+  border: 1px solid whitesmoke;
+  padding: 2%;
+  margin-top: 2%;
+  height: 100%;
+}
+
+.form-container-with-tab {
+  padding: 2% !important;
+  background-color: white;
+  margin-top: 2%;
+  border: 1px solid whitesmoke;
+}
+
+.form-container-padding {
+  background-color: white;
+  border: 1px solid whitesmoke;
+  padding: 1% 2%;
+  margin-top: 2%;
+  height: 100%;
+}
+
+.tab-width {
+  width: 30% !important;
+}
+
+.popup-title-left {
+  margin-left: 20%;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.ui-widget-content .ui-button, .ui-button {
+  color: whitesmoke;
+  border: 1px solid black;
+  background: black;
+}
+
+.ui-widget-content .ui-button:enabled:hover, .ui-button:enabled:hover {
+  color: whitesmoke;
+  border: 1px solid #00B432;
+  background: #00B432;
+}
+
+.dist-order-detail-table {
+  padding-top: 2%;
+  padding-left: 2%;
+  width: 100%;
+}
+
+.dist-order-detail-field {
+  padding-left: 2%;
+}
+
+.action-align {
+  width: 100px;
+  text-align: center;
+}
+
+.action-align-order {
+  width: 50px;
+  text-align: center;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.main-title {
+  margin-top: 1%;
+  margin-bottom: 2%;
+  padding: 0%;
+  color: #000000;
+}
+
+.sebm-google-map-container {
+  height: 500px;
+}
+
+.column-value-style {
+  text-align: right !important;
+}
+
+.column-header-style {
+  text-align: center !important;
+}
+
+.basic-data-table {
+  width: 102%;
+  padding-top: 1%;
+}
+
+.field-style {
+  padding-top: 2%;
+}
+
+.font-large {
+  font-size: large;
+}
+
+.ui-datatable tbody > tr.ui-widget-content.ui-state-highlight {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.column-width-80 {
+  width: 80px;
+}
+
+.column-width-25 {
+  width: 25px;
+}
+
+.column-width-30 {
+  width: 30px;
+}
+
+.column-width-100-percent {
+  width: 100%;
+}
+
+.column-width-150 {
+  width: 150px;
+}
+
+.column-width-200 {
+  width: 200px;
+}
+
+.column-width-500 {
+  width: 500px;
+}
+
+.column-width-120 {
+  width: 120px;
+}
+
+.column-width-55 {
+  width: 55px;
+}
+
+.column-width-70 {
+  width: 70px;
+}
+
+.table-top-margin {
+  margin-top: -3%;
+}
+
+.align-label-for-form {
+  padding-top: 1%;
+}
+
+.align-label-for-grid {
+  padding-top: 2%;
+  padding-left: 1%;
+}
+
+.table-margin {
+  margin-top: 1%;
+}
+
+.form-scroll {
+  height: auto;
+  overflow-y: auto;
+}
+
+.alert {
+  padding: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.make-customer {
+  margin-top: 3%;
+}
+
+.right-align-content {
+  text-align: right;
+}
+
+.margin_left_32 {
+  margin-left: -32px;
+}
+
+.formvalidclass {
+  font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.42857;
+  color: #b73c3c;
+}
+
+.bottom-top-margins {
+  margin-top: -18px;
+  margin-bottom: -18px;
+}
+
+.main-page-margins {
+  margin-bottom: -23px;
+  margin-top: -25px;
+}
+
+.order-form-margin {
+  margin-top: -65px;
+}
+
+.top-text-margin {
+  margin-top: -1% !important;
+}
+
+.no-margin {
+  margin-top: 0%;
+}
+
+.btn-top-margin {
+  margin-top: 1%;
+  margin-right: -1%;
+  margin-left: 1%;
+}
+
+.right-margin {
+  margin-right: 2%;
+}
+
+.report-container {
+  margin-left: 5%;
+  margin-top: 1%;
+  width: 90%;
+}
+
+.right-float {
+  float: right;
+}
+
+.sales-filter {
+  margin-top: -1%;
+  margin-bottom: -2%;
+}
+
+.widget {
+  border-radius: 3px;
+}
+
+.widget {
+  background-color: #fff;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.padding-25 {
+  padding: 25px !important;
+}
+
+.bg-green-600 {
+  background-color: #66aa00 !important;
+}
+
+.counter-inverse {
+  color: #fff;
+}
+
+.counter {
+  text-align: center;
+}
+
+.counter-label {
+  display: block;
+}
+
+.text-upperpurplecase {
+  text-transform: uppercase !important;
+}
+
+.counter-inverse .counter-number-group, .counter-inverse > .counter-number {
+  color: #fff;
+}
+
+.counter-lg .counter-number-group, .counter-lg > .counter-number {
+  font-size: 40px;
+}
+
+.bg-blue-600 {
+  background-color: #62a8ea !important;
+}
+
+.bg-purple-600 {
+  background-color: #926dde !important;
+}
+
+.bg-red-700 {
+  background-color: #e9595b !important;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.row-field {
+  padding: 1% 0%;
+}
+
+.tab-width-50 {
+  width: 50% !important;
+}
+
+.text-margin-right {
+  margin-right: 22%;
+}
+
+.map-top-margin {
+  margin-top: 2% !important;
+}
+
+.table-scrl {
+  overflow-y: auto;
+  height: 400px;
+  margin-top: -20px;
+}
+
+.table-wid {
+  width: 99%;
+}
+
+.link-color {
+  color: #66aa00 !important;
+}
+
+.table-scrl_crateslog {
+  margin-top: -2%;
+  height: 400px;
+  overflow-y: auto;
+}
+
+.dist_meet {
+  color: black
+}
+
+.dist_meet_label {
+  padding-left: 4%;
+}
+
+.save-target-btn {
+  margin-left: 2%;
+}
+
+.short-string {
+  display: inline-block;
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+.set-margin {
+  margin-left: 75%;
+  margin-bottom: -7%;
+}
+
+.img-margin {
+  margin: -5px 0 0 0;
+}
+
+.inline-img {
+  display: -webkit-inline-box;
+}
+
+.section-style {
+  margin-top: 2%;
+  margin-left: 10%;
+}
+
+.basic-table-scroll {
+  overflow-y: auto;
+  height: 340px;
+  margin-top: -15px;
+  width: 102%;
+  border: 1px solid #ddd;
+}
+
+.header-margin {
+  margin-top: 3%;
+  margin-bottom: -2%;
+}
+
+.pagination > li > a:hover, .pagination > li > a:focus, .pagination > li > span:hover, .pagination > li > span:focus {
+  background-color: #66aa00 !important;
+  border-color: #66aa00 !important;
+}
+
+.currentSelected {
+  background-color: #66aa00 !important;
+  color: white !important;
+}
+
+.scrollForLogin {
+  overflow-y: auto;
+  max-height: 100%;
+}
+/*---*/
+td.hide-next + td{
+    /* border: none !important; */
+    border-left: none !important;
+}
+td.hide-next{
+    /* border: none !important; */
+    border-right: none !important;
+}
+#policyQuestionsPrint #active td label{
+  font-size: 13px;
+}
+#policyQuestionsPrint #active td {
+    border: 1px solid #ccc;
+    min-width: 60px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.prt-lft h4 {
+    font-size: 18px;
+}
+@media screen  and (min-width: 320px) and (max-width: 1441px) {
+  .scroller{
+    height:280px ;
+  }
+  .dash-scroll {
+    height: 250px;
+   }
+}
+.firstrow > div {
+      display: -webkit-inline-box;
+}
+#policyQuestionsPrint #active td {
+    border: 1px solid #000;
+    min-width: 60px;
+}
+
+#policyQuestionsPrint #active tr th {
+    border: 1px solid #000;
+}
+#policyQuestionsPrint #print-logo{
+  float: left;
+}
+
+

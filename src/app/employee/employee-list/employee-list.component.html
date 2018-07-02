@@ -1,0 +1,70 @@
+<div class="section-body">
+  <section class="location-list">
+    <div class="content">
+      <div class="col-lg-10"></div>
+      <div class="col-lg-2">
+        <button type="button" name="addnew" id="addnew" routerLink="{{employeeAddRoute}}"
+                (click)="addEmployee()" class="btn btn-default btn-gborder pull-right add-new-btn">
+          <i class="fa fa-plus plus-icon-size" aria-hidden="true"></i>Add New Contact
+        </button>
+      </div>
+      <div class="tab-content">
+        <div class="">
+          <div class="col-sm-6"></div>
+          <div class="col-sm-6">
+            <div class="loaderForAll" *ngIf="spinner"></div>
+          </div>
+        </div>
+        <div  class="col-lg-12">
+          <div class="ui-widget-header" style="padding:4px 10px;border-bottom: 0 none">
+            <i class="fa fa-search" style="margin:4px 4px 0 0"></i>
+            <input #gb type="text" pInputText size="50" placeholder="Global Filter">
+          </div>
+          <p-dataTable [value]="employeeList" [rows]="10" [responsive]="true" [globalFilter]="gb" [paginator]="true" [totalRecords]="10">
+            <p-column field="firstName" header="First Name"  [sortable]="true" styleClass="action-align">
+              <ng-template pTemplate="header">
+                Name
+              </ng-template>
+              <ng-template let-row="rowData" pTemplate="body">
+                {{row.firstName}} {{row.lastName}}
+              </ng-template>
+            </p-column>
+            <p-column field="email" header="Email"  [sortable]="true" styleClass="action-align"></p-column>
+            <p-column field="phoneNo" header="Phone Number"  [sortable]="true" styleClass="action-align"></p-column>
+            <p-column [sortable]="true" styleClass="action-align">
+              <ng-template pTemplate="header">
+                Status
+              </ng-template>
+              <ng-template let-row="rowData" pTemplate="body">
+                {{row.activeFlag ? 'Active' : 'Inactive'}}
+              </ng-template>
+            </p-column>
+            <p-column [sortable]="true" styleClass="action-align">
+              <ng-template pTemplate="header">
+                Status
+              </ng-template>
+              <ng-template let-row="rowData" pTemplate="body">
+                <label class="switch pull-right">
+                  <input type="checkbox" name="h1" id="h1" [checked]="row.activeFlag"
+                         (change)="changeStatus(row)">
+                  <span class="slider round"></span>
+                </label>
+              </ng-template>
+            </p-column>
+            <p-column [sortable]="true" styleClass="action-align">
+              <ng-template pTemplate="header">
+                Action
+              </ng-template>
+              <ng-template let-row="rowData" pTemplate="body">
+                <label class="pull-right col-lg-2 col-sm-2">
+                  <a class="hand-cursor" routerLink="{{employeeModifyRoute}}" (click)="editEmployee(row);"><i
+                    class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                </label>
+              </ng-template>
+            </p-column>
+          </p-dataTable>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

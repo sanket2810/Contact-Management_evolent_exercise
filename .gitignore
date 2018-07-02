@@ -1,0 +1,114 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+# Ionic
+*~
+*.sw[mnpcod]
+*.log
+*.tmp
+*.tmp.*
+mobile/log.txt
+*.sublime-project
+*.sublime-workspace
+mobile/.vscode/
+mobile/npm-debug.log*
+
+mobile/.idea/
+mobile/.sass-cache/
+mobile/.tmp/
+mobile/.versions/
+mobile/coverage/
+mobile/dist/
+mobile/node_modules/
+mobile/tmp/
+mobile/temp/
+mobile/hooks/
+mobile/platforms/
+mobile/plugins/
+mobile/plugins/android.json
+mobile/plugins/ios.json
+mobile/www/
+mobile/$RECYCLE.BIN/
+
+mobile/.DS_Store
+mobile/Thumbs.db
+mobile/UserInterfaceState.xcuserstate
+
+
+# Ionic Mobile Mockups
+mockups/mobile/.vscode/
+mockups/mobile/npm-debug.log*
+
+mockups/mobile/.idea/
+mockups/mobile/.sass-cache/
+mockups/mobile/.tmp/
+mockups/mobile/.versions/
+mockups/mobile/coverage/
+mockups/mobile/dist/
+mockups/mobile/node_modules/
+mockups/mobile/tmp/
+mockups/mobile/temp/
+mockups/mobile/hooks/
+mockups/mobile/platforms/
+mockups/mobile/plugins/
+mockups/mobile/plugins/android.json
+mockups/mobile/plugins/ios.json
+mockups/mobile/www/
+mockups/mobile/$RECYCLE.BIN/
+
+mockups/mobile/.DS_Store
+mockups/mobile/Thumbs.db
+mockups/mobile/UserInterfaceState.xcuserstate
+
+# Angular 4
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# dependencies
+/node_modules
+
+# IDEs and editors
+web/.idea
+web/.project
+web/.classpath
+web/.c9/
+*.launch
+web/.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+web/.vscode/*
+web/!.vscode/settings.json
+web/!.vscode/tasks.json
+web/!.vscode/launch.json
+web/!.vscode/extensions.json
+
+# misc
+web/.sass-cache
+web/connect.lock
+web/coverage
+web/libpeerconnection.log
+web/npm-debug.log
+web/testem.log
+web/typings
+
+# e2e
+web/e2e/*.js
+web/e2e/*.map
+
+# System Files
+web/.DS_Store
+web/Thumbs.db
+
+# Java
+
+server/nbproject/
+server/.idea/
+server/nb-configuration.xml
+server/target/
+server/.settings
+server/.project
+server/.classpath

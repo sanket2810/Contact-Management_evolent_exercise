@@ -1,0 +1,61 @@
+.form-gap {
+  padding-top: 120px;
+}
+
+.custom {
+  width: 100px !important;
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.backgroundImgForLogin {
+  background-image: url('../../../assets/images/loginBackground.jpg') !important;
+  width: 100%;
+  height: 100%;
+}
+
+.submitButton {
+  float: right;
+}
+
+.loginDiv {
+  margin-top: -13% !important;
+  position: fixed;
+}
+
+.margin {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.mrg-side {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.loaderForAll {
+  border: 3px solid #4C4B4F;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  border-top: 3px solid transparent;
+  border-radius: 70%;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  z-index: 9999;
+
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

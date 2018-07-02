@@ -1,0 +1,78 @@
+<div class="container">
+  <form #employeeForm="ngForm" novalidate>
+    <div class="row">
+      <div class="col-sm-6"></div>
+      <div class="col-sm-6">
+        <div class="loaderForAll" *ngIf="spinner"></div>
+      </div>
+    </div>
+    <div class="row padding-20">
+      <div class="col-lg-6 col-md-6 col-sm-12 pull-left">
+        <label *ngIf="!addEmployee" class="bold-label col-lg-12 col-md-12">
+          Edit Contact
+        </label>
+        <label *ngIf="addEmployee" class="bold-label col-lg-12 col-md-12">
+          Add Contact
+        </label>
+        <div class="col-lg-12 col-md-12 top-padding">
+          <label class="">First Name </label>
+          <input type="text" [(ngModel)]="employee.firstName" class="form-control"
+                 (change)="this.areFormsSavedFlag = false"
+                 name="firstName" id="firstName" required>
+        </div>
+        <div class="col-lg-12 col-md-12 top-padding">
+          <label class="">Last Name </label>
+          <input type="text" [(ngModel)]="employee.lastName" class="form-control"
+                 (change)="this.areFormsSavedFlag = false"
+                 name="lastName" id="lastName" required>
+        </div>
+        <div class="col-lg-12 col-md-12 top-padding">
+          <label class="">Email </label>
+          <input type="text" [(ngModel)]="employee.email" class="form-control"
+                 (change)="this.areFormsSavedFlag = false" [disabled]="!addEmployee"
+                 name="email" id="email" required>
+          <p *ngIf="employeeAlreadyExist" class="error">Email is already exist.</p>
+        </div>
+        <div class="col-lg-12 col-md-12 top-padding">
+          <label class="">Phone No. </label>
+          <input type="tel" [(ngModel)]="employee.phoneNo" class="form-control" pattern="[0-9]{10}$" maxlength="10" #phone="ngModel"
+                 (change)="this.areFormsSavedFlag = false"
+                 name="phone" id="phone" required>
+          <p  *ngIf="phone.errors && (phone.dirty || phone.touched)" class="error">Enter valid phone number</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <button *ngIf="addEmployee" type="button" name="save" id="save" [disabled]="!employeeForm.form.valid"
+              class="btn btn-default btn-gfill  pull-right"
+              (click)="createEmployee()">Save
+      </button>
+      <button *ngIf="!addEmployee" type="button" name="modify" id="modify" [disabled]="!employeeForm.form.valid"
+              class="btn btn-default btn-gfill  pull-right"
+              (click)="modifyEmployee()">Modify
+      </button>
+      <button type="button" *ngIf="employee.activeFlag && !addEmployee"
+              class="btn btn-default btn-gborder  pull-right move-right" (click)="changeStatus(true, false);"
+              name="inactive" id="inactive">Make Inactive
+      </button>
+      <button type="button" *ngIf="!employee.activeFlag && !addEmployee"
+              class="btn btn-default btn-gborder  pull-right move-right" (click)="changeStatus(false, true);"
+              name="active" id="active">Make Active
+      </button>
+    </div>
+  </form>
+</div>
+<p-dialog header="Token" [(visible)]="tokenDisplay" modal="modal" width="500" [responsive]="true">
+  <p>Please use following token to link to health system : </p>
+  <div class="row">
+    <div class="col-md-8 col-sm-8">
+      <input class="form-control token-display-text" readonly="true" id="tokenId" type="text"
+             value="{{linkToParentToken}}">
+    </div>
+    <div class="col-md-2 col-sm-2">
+      <button type="button" class="btn btn-default btn-success line-height" (click)="copyToClipboard('#tokenId')">
+        copy
+      </button>
+    </div>
+  </div>
+</p-dialog>

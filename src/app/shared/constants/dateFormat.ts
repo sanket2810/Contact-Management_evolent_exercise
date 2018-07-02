@@ -1,0 +1,18 @@
+export const DATEFORMAT = {
+  MM_DD_YYYY: 'MM/DD/YYYY',
+  DD_MM_YY: 'DD/MM/YY',
+  MMM_DD_YYYY: 'MMM-DD-YYYY',
+  mmm_dd_yyyy: 'mmm-dd-yyyy',
+  mmmdd_yyyy: 'mmm dd, yyyy',
+  mm_dd_yyyy: 'mm/dd/yyyy',
+  YYYY_M_DD_HH_mm_ss: 'YYYY-MM-DD HH:mm:ss',
+  YYYY_MM_DD: 'YYYY-MM-DD',
+  ddd_D_MMM_YYYY: 'ddd, D-MMM-YYYY',
+  LT: 'LT',
+  L: 'L',
+  HH_mm: 'HH:mm',
+  DD: 'DD',
+  MM: 'MM',
+  YYYY: 'YYYY',
+  MMM_DD_YYYY_MOMENT:'MMM DD, YYYY',
+};
